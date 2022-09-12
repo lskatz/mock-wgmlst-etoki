@@ -12,3 +12,11 @@ In the db folder, each scheme has two files.
    * Each database has been initialized into chunks of files of at most 500k lines to avoid having huge files
    * These need to be concatenated later at time of use
 
+# Initial results and thoughts
+
+* tar.gz file is still huge at 161M.  Might want to make one repo per schema.
+* automatic tar.gz files on github would be made with versions/tags
+* Might want to exclude allele numbers to help with automated merging. Therefore, some other process would have to have to assign alleles. Alternatively, EToKi would have to be modified to read a database with no allele numbers and with only the hash and locus. Or else, it would have to be a manual process.
+* Would need to make good instructions to others on how to accept pull request so that this can be democratized.
+* Would need some kind of unit testing for basic sanity checks especially on pull requests.
+
