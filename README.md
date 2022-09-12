@@ -20,3 +20,22 @@ In the db folder, each scheme has two files.
 * Would need to make good instructions to others on how to accept pull request so that this can be democratized.
 * Would need some kind of unit testing for basic sanity checks especially on pull requests.
 
+# Proposed usage
+
+## installing
+
+User would:
+
+1. download the repo
+2. concatenate the `csv` files 
+3. run `EToKi MLSType` against the database
+
+## contributing
+
+1. clone repo
+2. add
+   * (alleles) add lines to csv file
+   * (loci) add new entry to fasta file. Add new alleles to csv file.
+3. pull request
+4. (github actions) automated sanity check
+5. curator, i.e., MLST stakeholder, accepts pull request or requests revisions from submitter
